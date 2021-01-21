@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Time Complexity</title>
+    <h1>Time Complexity</h1>
+    <h2>What is Time Complexity?</h2>
+    <h6>Time Complexity is the number of operations an algorithm runs.</h6>
+    <h2>Why do we need Time Complexity?</h2>
+    <h6>In many contests like the USACO contest want you to compile your C++ code in 2 seconds and Python/Java Code in 4 seconds whereas in CSES contest or Codeforces Contest, whatever be your language, your code should compile in 1 second. Thus in competitive programming Time Complexity is needed to Optimize the compiling time in tough contests like USACO, CSES, Codeforces. If your code does not compile in fiven time limit, you get a Time Limit Exceeded Error</h6>
+    <h2>What is Best Case Time Complexity?</h2>
+    <h6>Best Case Time Complexity is the fastest way a program runs in which optimal inputs are chosen. Let us take an example of the best case Time Complexity code for Sorting Algorithm. It would be for a data structure which is already stored</h6>
+    <h2>What is worst case Time Complexity?</h2>
+    <h6>The slowest Time needed to complete with pessimal inputs chosen. Worst Case Time Complexity is Always chosen so that programmers know the largest time the code could take doesn't exceed the time limit for compiling.</h6>
+    <h2>Complexity Calculations</h2>
+    <h6>Time Complexity is usually expressed using the Big O Notation. The worst case Time Complexity for any program is O(f(n)) where f(n) is the algorithm. Complexity of an algorithm increase with input size of <var>n</var>.
+    The Code below has Time Complexity of O(n) because there are <var>n</var> iterations.</h6>
+    <pre>
+    for(int <var>i</var> = 0 ; <var>i</var> < <var>n</var> ; <var>i</var>++)
+    {
+      //C++98 O(1) time complexity code here.
+    }
+    </pre>
+    <pre>
+    while(int <var>i</var> < <var>n</var>)
+    {
+      //C++98 O(1) time complexity Code here.
+    }
+    </pre>
+    <pre>
+    for <var>i</var> in range(0 , <var>n</var>):
+      #Python 3.8 O(1) time complexity code
+    </pre>
+    <pre>
+    while <var>i</var> < <var>n</var>:
+      #Python 3.8 O(1) Time Complexity code
+    </pre>
+    <h2>Nested Loop Time Complexity</h2>
+    <h6>Nested loop means a loop inside a loop. Most USACO Bronze Problems are dependent on nested loops. Below code has a Time Complexity of O(n<sup>2</sup>)</h6>
+    <pre>
+      for(int <var>i</var> = 0 ; <var>i</var> < <var>n</var> ; <var>i</var>++)
+      {
+        for(int <var>j</var> = 0 ; <var>j</var> < <var>n</var> ; <var>j</var>++)
+        {
+          //C++98 Code with Time Complexity O(1).
+        }
+      }
+      
+      while(int <var>i</var> < <var>n</var>)
+      {
+        while(int <var>j</var> < <var>n</var>)
+        {
+          //C++98 code with Time Complexity O(1).
+        }
+      }
+
+      for <var>i</var> in range(0 , <var>n</var>):
+        for <var>j</var> in range(0 , <var>n</var>):
+          #Python 3.8 code with Time Complexity O(1).
+      
+      while <var>i</var> < <var>n</var>:
+        while <var>j</var> < <var>n</var>:
+          #Python 3.8 code with Tiem Complexity O(1).
+    </pre>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+  </body>
+</html>  
